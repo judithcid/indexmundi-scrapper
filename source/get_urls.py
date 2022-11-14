@@ -37,8 +37,3 @@ def get_urls(currency: str, years_interval: str) -> list:
                             complete_url = url + suba['href'] + "&currency=" + value['value']
                             urls.append(complete_url)
     return urls
-
-
-urls = get_urls("US Dollar", "20")
-print(urls)
-print(len(urls))
